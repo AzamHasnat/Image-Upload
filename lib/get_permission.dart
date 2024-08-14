@@ -1,7 +1,7 @@
-import 'dart:html';
 
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
+import 'package:image_upload_flutter/utils.dart';
 import 'package:permission_handler/permission_handler.dart';
 
 class GetPermisison{
@@ -41,16 +41,4 @@ class GetPermisison{
     return false;
   }
 
-}
-
-void ShowToast({required String message}){
-  Fluttertoast.showToast(
-        msg: message,
-        toastLength: Toast.LENGTH_SHORT,
-        gravity: ToastGravity.CENTER,
-        timeInSecForIosWeb: 1,
-        backgroundColor: Colors.red,
-        textColor: Colors.white,
-        fontSize: 16.0
-    );
 }
